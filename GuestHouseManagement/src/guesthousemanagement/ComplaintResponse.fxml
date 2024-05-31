@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPaneCustomerProfile" prefHeight="650.0" prefWidth="700.0" stylesheets="@backGroundWelcome.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.ComplaintResponseController">
+   <children>
+      <TableView fx:id="tableView" layoutY="114.0" onMouseClicked="#userClickOnTable" prefHeight="246.0" prefWidth="864.0" style="-fx-background-color: transparent; -fx-border-width: 2.5px; -fx-border-radius: 5px;">
+         <columns>
+            <TableColumn fx:id="srNo" prefWidth="66.4000244140625" style="-fx-background-color: transparent;" text="SrNo." />
+            <TableColumn fx:id="complaintCategory" prefWidth="154.4000244140625" style="-fx-background-color: transparent;" text="Complaint Category" />
+            <TableColumn fx:id="complaint" prefWidth="507.20001220703125" text="Complaint" />
+            <TableColumn fx:id="submissionDate" prefWidth="137.5999755859375" text="Submission Date" />
+         </columns>
+      </TableView>
+      <Button layoutX="743.0" layoutY="593.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-background-radius: 5px; -fx-border-color: cyan; -fx-border-radius: 5px; -fx-text-fill: white;" text="Back" textFill="#f5f5f500">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow height="15.0" offsetX="6.0" offsetY="5.0" radius="7.0" spread="0.07" width="15.0" />
+         </effect>
+      </Button>
+      <Label fx:id="label" alignment="CENTER" layoutX="236.0" layoutY="363.0" prefHeight="44.0" prefWidth="438.0" style="-fx-text-fill: red;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="responseButton" layoutX="345.0" layoutY="416.0" mnemonicParsing="false" onAction="#seeResponseButtonPressed" onMouseClicked="#userClickOnTable" style="-fx-background-color: transparent; -fx-text-fill: gold; -fx-border-color: white; -fx-border-width: 2.5px; -fx-border-radius: 30px;" text="See Response">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.78">
+               <input>
+                  <SepiaTone>
+                     <input>
+                        <DropShadow spread="0.32" />
+                     </input>
+                  </SepiaTone>
+               </input>
+            </Bloom>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

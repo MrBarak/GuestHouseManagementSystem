@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.ComplaintController">
+   <children>
+      <VBox id="rootPaneCustomerProfile" prefHeight="800.0" prefWidth="794.0" style="-fx-border-color: cyan; -fx-border-width: 3px;" stylesheets="@../guesthousemanagement/backGroundWelcome.css">
+         <children>
+            <HBox id="rootPaneSide" prefHeight="72.0" prefWidth="788.0" style="-fx-border-color: cyan; -fx-border-width: 3px;" stylesheets="@../guesthousemanagement/backGroundWelcome.css">
+               <children>
+                  <ImageView fx:id="logo2" fitHeight="92.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../complaintLogo.png" />
+                     </image>
+                     <effect>
+                        <DropShadow height="9.09" offsetX="5.0" offsetY="5.0" radius="7.0225" spread="0.13" />
+                     </effect>
+                  </ImageView>
+                  <Pane prefHeight="58.0" prefWidth="644.0">
+                     <children>
+                        <Label fx:id="nameLabel" layoutX="-89.0" prefHeight="83.0" prefWidth="802.0" style="-fx-text-fill: white; -fx-alignment: center;" text="COMPLAINTS">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <DropShadow height="15.0" offsetX="5.0" offsetY="5.0" radius="7.0" spread="0.43" width="15.0">
+                                       <input>
+                                          <SepiaTone />
+                                       </input>
+                                    </DropShadow>
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fx:id="logo" fitHeight="98.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logo1.png" />
+                     </image>
+                     <effect>
+                        <DropShadow height="9.09" offsetX="5.0" offsetY="5.0" radius="7.0225" spread="0.13" />
+                     </effect>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+            <HBox prefHeight="116.0" prefWidth="788.0" />
+            <HBox prefHeight="260.0" prefWidth="788.0">
+               <children>
+                  <Pane prefHeight="359.0" prefWidth="799.0">
+                     <children>
+                        <Button layoutX="111.0" layoutY="173.0" mnemonicParsing="false" onAction="#createComplaintButtonPushed" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Create Complaint">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom threshold="0.78">
+                                 <input>
+                                    <SepiaTone>
+                                       <input>
+                                          <DropShadow spread="0.32" />
+                                       </input></SepiaTone>
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                        <Button layoutX="496.0" layoutY="171.0" mnemonicParsing="false" onAction="#complaintRecordButtonPushed" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Complaint Record">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom threshold="0.78">
+                                 <input>
+                                    <SepiaTone>
+                                       <input>
+                                          <DropShadow spread="0.32" />
+                                       </input>
+                                    </SepiaTone>
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                        <StackPane id="image" layoutX="124.0" layoutY="-6.0" prefHeight="150.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="create" fitHeight="181.0" fitWidth="221.0" onMouseClicked="#createComplaintImagePushed" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../createComplaint.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow height="6.7" offsetX="10.0" offsetY="5.0" radius="13.575000000000001" spread="0.41" width="49.6" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane id="image" layoutX="506.0" layoutY="9.0" prefHeight="150.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="record" fitHeight="151.0" fitWidth="171.0" onMouseClicked="#complaintRecordImagePushed" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../complaintRecord.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow height="6.7" offsetX="10.0" offsetY="5.0" radius="13.575000000000001" spread="0.41" width="49.6" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="238.0" prefWidth="788.0">
+               <children>
+                  <Pane prefHeight="238.0" prefWidth="805.0">
+                     <children>
+                        <Button layoutX="251.0" layoutY="207.0" mnemonicParsing="false" onAction="#complaintResponseButtonPushed" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Complaint Response">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom threshold="0.78">
+                                 <input>
+                                    <SepiaTone>
+                                       <input>
+                                          <DropShadow spread="0.32" />
+                                       </input>
+                                    </SepiaTone>
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                        <StackPane id="image" layoutX="294.0" layoutY="40.0" prefHeight="150.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="response" fitHeight="158.0" fitWidth="171.0" onMouseClicked="#complaintResponseImagePushed" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../complaintResponse.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow height="6.7" offsetX="10.0" offsetY="5.0" radius="13.575000000000001" spread="0.41" width="49.6" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <Pane prefHeight="76.0" prefWidth="788.0">
+               <children>
+                  <Button layoutX="674.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-background-radius: 5px; -fx-border-color: cyan; -fx-border-radius: 5px; -fx-text-fill: white;" text="Back" textFill="#f5f5f500">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

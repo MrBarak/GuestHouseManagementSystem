@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPaneSide" prefHeight="700.0" prefWidth="793.0" stylesheets="@backGroundWelcome.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.RegisterCustomerController">
+   <children>
+      <HBox prefHeight="118.0" prefWidth="800.0">
+         <children>
+            <Pane prefHeight="117.0" prefWidth="800.0" style="-fx-border-color: grey;">
+               <children>
+                  <Label layoutX="139.0" layoutY="22.0" prefHeight="74.0" prefWidth="523.0" text="Registration Form">
+                     <font>
+                        <Font name="Old English Text MT" size="66.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fx:id="logo" fitHeight="92.0" fitWidth="97.0" layoutX="680.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logo1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="logo2" fitHeight="118.0" fitWidth="173.0" layoutX="-16.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../customerLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <VBox layoutX="88.0" layoutY="137.0" prefHeight="638.0" prefWidth="646.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="580.0">
+               <children>
+                  <Pane prefHeight="40.0" prefWidth="582.0">
+                     <children>
+                        <Label layoutX="87.0" layoutY="12.0" text="*First Name">
+                           <font>
+                              <Font name="Eras Bold ITC" size="20.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                        <TextField fx:id="firstName" layoutX="329.0" layoutY="14.0" prefHeight="25.0" prefWidth="252.0" promptText="Enter your First Name" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 5px;" />
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="580.0">
+               <children>
+                  <Pane prefHeight="40.0" prefWidth="585.0">
+                     <children>
+                        <Label layoutX="86.0" layoutY="19.0" text="*Last Name">
+                           <font>
+                              <Font name="Eras Bold ITC" size="20.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                        <TextField fx:id="lastName" layoutX="328.0" layoutY="19.0" prefHeight="25.0" prefWidth="252.0" promptText="Enter your Last Name" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 5px;" />
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="580.0">
+               <children>
+                  <Pane prefHeight="40.0" prefWidth="581.0">
+                     <children>
+                        <Label layoutX="86.0" layoutY="19.0" text="*CNIC">
+                           <font>
+                              <Font name="Eras Bold ITC" size="20.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                        <TextField fx:id="cnic" layoutX="328.0" layoutY="14.0" prefHeight="25.0" prefWidth="252.0" promptText="Enter your CNIC e.g. 12345-1234567-1" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 5px;" />
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="580.0">
+               <children>
+                  <Pane prefHeight="40.0" prefWidth="585.0">
+                     <children>
+                        <Label layoutX="86.0" layoutY="19.0" text="*Date of Birth">
+                           <font>
+                              <Font name="Eras Bold ITC" size="20.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                        <DatePicker fx:id="dateOfBirth" layoutX="330.0" layoutY="19.0" prefHeight="25.0" prefWidth="252.0" promptText="Select Date of Birth" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 5px;" />
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="580.0">
+               <children>
+                  <Pane prefHeight="40.0" prefWidth="582.0">
+                     <children>
+                        <Label layoutX="86.0" layoutY="19.0" text="*Gender">
+                           <font>
+                              <Font name="Eras Bold ITC" size="20.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                        <RadioButton fx:id="male" layoutX="337.0" layoutY="22.0" mnemonicParsing="false" text="Male" />
+                        <RadioButton fx:id="female" layoutX="493.0" layoutY="22.0" mnemonicParsing="false" text="Female" />
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="580.0">
+               <children>
+                  <Pane prefHeight="40.0" prefWidth="604.0">
+                     <children>
+                        <Label layoutX="84.0" layoutY="9.0" text="*Mobile Number">
+                           <font>
+                              <Font name="Eras Bold ITC" size="20.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                        <TextField fx:id="mob1" layoutX="330.0" layoutY="7.0" prefHeight="25.0" prefWidth="252.0" promptText="Enter any Mobile Number" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 5px;" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="650.0">
+                     <children>
+                        <TextField fx:id="mob2" layoutX="330.0" layoutY="25.0" prefHeight="25.0" prefWidth="252.0" promptText="Enter Mobile Number (NOT Compulsory)" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 5px;" />
+                        <Label layoutX="84.0" layoutY="26.0" text="Other Mobile Number">
+                           <font>
+                              <Font name="Eras Bold ITC" size="20.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane prefHeight="98.0" prefWidth="646.0">
+               <children>
+                  <Button layoutX="288.0" layoutY="22.0" mnemonicParsing="false" onAction="#nextButtonPushedRegister" text="Next">
+                     <font>
+                        <Font name="Elephant Italic" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <input>
+                              <SepiaTone />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="label" layoutX="137.0" layoutY="66.0" prefHeight="37.0" prefWidth="495.0" style="-fx-text-fill: red;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Button layoutX="716.0" layoutY="721.0" mnemonicParsing="false" onAction="#backButtonPushed" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
