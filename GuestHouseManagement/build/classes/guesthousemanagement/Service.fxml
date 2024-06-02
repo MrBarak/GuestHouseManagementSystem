@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.ServiceController">
+   <children>
+      <VBox id="rootPaneCustomerProfile" prefHeight="800.0" prefWidth="794.0" style="-fx-border-color: cyan; -fx-border-width: 3px;" stylesheets="@../guesthousemanagement/backGroundWelcome.css">
+         <children>
+            <HBox id="rootPaneSide" prefHeight="54.0" prefWidth="794.0" style="-fx-border-color: cyan; -fx-border-width: 3px;" stylesheets="@../guesthousemanagement/backGroundWelcome.css">
+               <children>
+                  <ImageView fx:id="logo2" fitHeight="84.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../service.png" />
+                     </image>
+                     <effect>
+                        <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17" />
+                     </effect>
+                  </ImageView>
+                  <Pane prefHeight="58.0" prefWidth="644.0">
+                     <effect>
+                        <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17" />
+                     </effect>
+                     <children>
+                        <Label fx:id="nameLabel" layoutX="-82.0" layoutY="-6.0" prefHeight="83.0" prefWidth="802.0" style="-fx-text-fill: white; -fx-alignment: center;" text="SERVICES">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <DropShadow height="15.0" offsetX="5.0" offsetY="5.0" radius="7.0" spread="0.43" width="15.0">
+                                       <input>
+                                          <SepiaTone />
+                                       </input>
+                                    </DropShadow>
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fx:id="logo" fitHeight="85.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logo1.png" />
+                     </image>
+                     <effect>
+                        <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17" />
+                     </effect>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow radius="8.5" spread="0.14" width="15.0" />
+               </effect>
+            </HBox>
+            <HBox prefHeight="116.0" prefWidth="788.0">
+               <children>
+                  <Pane prefHeight="114.0" prefWidth="795.0">
+                     <children>
+                        <ComboBox fx:id="combo" layoutX="223.0" layoutY="41.0" prefHeight="31.0" prefWidth="364.0" promptText="Select Your Booking First" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 10px; -fx-border-width: 2.5px;" />
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <HBox prefHeight="230.0" prefWidth="788.0">
+               <children>
+                  <Pane prefHeight="230.0" prefWidth="799.0">
+                     <children>
+                        <Button layoutX="67.0" layoutY="179.0" mnemonicParsing="false" onAction="#houseKeeping" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Housekeeping">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <SepiaTone />
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                        <Button layoutX="362.0" layoutY="182.0" mnemonicParsing="false" onAction="#food" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Food">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <SepiaTone />
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                        <StackPane id="image" layoutX="294.0" layoutY="14.0" prefHeight="150.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="food" fitHeight="169.0" fitWidth="137.0" onMouseClicked="#food" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../food.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane id="image" layoutX="61.0" layoutY="21.0" prefHeight="150.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="housekeeping" fitHeight="156.0" fitWidth="137.0" onMouseClicked="#houseKeeping" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../housekeeping.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane id="image" layoutX="534.0" layoutY="9.0" prefHeight="170.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="repair" fitHeight="179.0" fitWidth="192.0" onMouseClicked="#repairing" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../repair.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow height="16.0" offsetX="6.0" offsetY="5.0" radius="7.5" spread="0.5" width="16.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Button layoutX="604.0" layoutY="180.0" mnemonicParsing="false" onAction="#repairing" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Repair">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <SepiaTone />
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="230.0" prefWidth="788.0">
+               <children>
+                  <Pane prefHeight="228.0" prefWidth="901.0">
+                     <children>
+                        <Button layoutX="208.0" layoutY="192.0" mnemonicParsing="false" onAction="#food" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Cleaning">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <SepiaTone />
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                        <Button layoutX="463.0" layoutY="193.0" mnemonicParsing="false" onAction="#laundry" style="-fx-background-color: transparent; -fx-text-fill: gold;" text="Laundry">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <SepiaTone />
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Button>
+                        <StackPane id="image" layoutX="169.0" layoutY="14.0" prefHeight="150.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="cleaning" fitHeight="193.0" fitWidth="177.0" onMouseClicked="#cleaning" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../cleaning.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane id="image" layoutX="428.0" layoutY="29.0" prefHeight="150.0" prefWidth="200.0" stylesheets="@buttonStyles.css">
+                           <children>
+                              <ImageView fx:id="laundry" fitHeight="169.0" fitWidth="180.0" onMouseClicked="#laundry" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../laundry.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <Pane prefHeight="136.0" prefWidth="788.0">
+               <children>
+                  <Button layoutX="660.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-background-radius: 5px; -fx-border-color: cyan; -fx-border-radius: 5px; -fx-text-fill: white;" text="Back" textFill="#f5f5f500">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="40.07" offsetX="6.0" offsetY="6.0" radius="9.965" spread="0.13" width="1.79" />
+                     </effect>
+                  </Button>
+                  <Label fx:id="label" alignment="CENTER" layoutX="169.0" layoutY="24.0" prefHeight="51.0" prefWidth="466.0" style="-fx-text-fill: red;">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

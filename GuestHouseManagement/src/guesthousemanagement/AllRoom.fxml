@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPaneReceptionistBackground" prefHeight="650.0" prefWidth="700.0" stylesheets="@backGroundWelcome.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.AllRoomController">
+   <children>
+      <Pane layoutX="68.0" layoutY="14.0" prefHeight="700.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="674.0" layoutY="596.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-background-radius: 5px; -fx-border-color: cyan; -fx-border-radius: 5px; -fx-text-fill: white;" text="Back" textFill="#f5f5f500">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="branch" layoutX="109.0" layoutY="152.0" prefHeight="42.0" prefWidth="266.0" promptText="Select Branch" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 10px; -fx-border-width: 2.5px;" />
+            <ComboBox fx:id="category" layoutX="437.0" layoutY="152.0" prefHeight="42.0" prefWidth="266.0" promptText="Select Category" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 10px; -fx-border-width: 2.5px;" />
+            <Button layoutX="321.0" layoutY="211.0" mnemonicParsing="false" onAction="#showResultButtonPushed" style="-fx-background-color: transparent; -fx-text-fill: gold; -fx-border-color: white; -fx-border-width: 2.5px; -fx-border-radius: 30px;" text="Show Result">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.78">
+                     <input>
+                        <SepiaTone>
+                           <input>
+                              <DropShadow spread="0.32" />
+                           </input>
+                        </SepiaTone>
+                     </input>
+                  </Bloom>
+               </effect>
+            </Button>
+            <Label layoutX="109.0" layoutY="123.0" style="-fx-text-fill: white;" text="BRANCH: ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="441.0" layoutY="125.0" style="-fx-text-fill: white;" text="CATEGORY:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="nameLabel" layoutX="5.0" layoutY="16.0" prefHeight="83.0" prefWidth="802.0" style="-fx-text-fill: white; -fx-alignment: center;" text="ALL ROOM INFO">
+         <font>
+            <Font name="Verdana Bold" size="40.0" />
+         </font>
+         <effect>
+            <Bloom>
+               <input>
+                  <DropShadow height="15.0" offsetX="5.0" offsetY="5.0" radius="7.0" spread="0.43" width="15.0">
+                     <input>
+                        <SepiaTone />
+                     </input>
+                  </DropShadow>
+               </input>
+            </Bloom>
+         </effect>
+      </Label>
+      <Separator layoutX="108.0" layoutY="8.0" prefHeight="16.0" prefWidth="591.0" />
+      <Separator layoutX="111.0" layoutY="90.0" prefHeight="16.0" prefWidth="584.0" />
+      <ImageView fx:id="logo" fitHeight="73.0" fitWidth="73.0" layoutX="716.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo1.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableView" layoutX="1.0" layoutY="295.0" prefHeight="258.0" prefWidth="864.0" style="-fx-background-color: transparent; -fx-border-width: 2.5px; -fx-border-radius: 5px;">
+         <columns>
+            <TableColumn fx:id="houseName" prefWidth="96.79999089241028" style="-fx-background-color: transparent;" text="Room No." />
+            <TableColumn fx:id="branchNameC" prefWidth="108.0" style="-fx-background-color: transparent;" text="House Number" />
+            <TableColumn fx:id="locationC" prefWidth="130.40000915527344" text=" Branch Number" />
+            <TableColumn fx:id="cityC" prefWidth="322.39996337890625" text="Location" />
+            <TableColumn fx:id="categoryC" prefWidth="112.7999267578125" text="Category" />
+            <TableColumn fx:id="statusC" prefWidth="95.199951171875" text="Status" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

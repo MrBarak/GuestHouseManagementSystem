@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 21, 2019, 11:27:08 PM
+    Author     : Hamza Barak
+*/
+
+.button:hover{
+    -fx-background-color:bisque;
+    -fx-text-fill:blueviolet;
+    -fx-scale-x:1.1;
+    -fx-scale-y:1.1;
+}
+
+.button:pressed{
+    -fx-background-color:bisque;
+    -fx-text-fill:blueviolet;
+    -fx-scale-x:1.2;
+    -fx-scale-y:1.2;
+}
+
+
+#image:hover
+{
+    -fx-scale-x:1.1;
+    -fx-scale-y:1.1;
+}
+
+#image:pressed
+{
+    -fx-scale-x:1.2;
+    -fx-scale-y:1.2;
+}

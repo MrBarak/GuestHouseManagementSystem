@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 26, 2019, 1:39:02 AM
+    Author     : Hamza Barak -fx-background-size: 100% 100%;
+*/
+#rootPane{
+    -fx-background-image: url("bg.png");
+    -fx-background-size: 100% 100%;
+}
+
+#rootPaneSide{
+    -fx-background-image: url("blue.png");
+    -fx-background-size: 100% 100%;
+}
+
+#rootPaneReceptionist{
+    -fx-background-image: url("recpt.png");
+    -fx-background-size: 100% 100%;
+}
+
+#rootPaneReceptionistBackground{
+    -fx-background-image: url("receptionistBackground.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+#rootPaneAdminBackground{
+    -fx-background-image: url("adminBackground.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+#rootPaneAdmin{
+    -fx-background-image: url("Background.png");
+    -fx-background-size: 100% 100%;
+}
+#rootPaneCustomer{
+    -fx-background-image: url("customerBG.png");
+    -fx-background-size: 100% 100%;
+}
+#rootPaneCustomerProfile{
+    -fx-background-image: url("customerProfile.png");
+    -fx-background-size: 100% 100%;
+}
+
+#button:hover{
+    -fx-background-color:bisque;
+    -fx-text-fill:blueviolet;
+}
+.button:hover, .button:focused{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;          
+    -fx-text-fill: -fx-primary;
+}

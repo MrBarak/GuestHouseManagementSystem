@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPaneCustomer" prefHeight="500.0" prefWidth="740.0" stylesheets="@backGroundWelcome.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.CustomerLogin">
+   <children>
+      <VBox id="rootPaneSide" layoutX="482.0" prefHeight="500.0" prefWidth="300.0" stylesheets="@backGroundWelcome.css">
+         <children>
+            <Pane prefHeight="35.0" prefWidth="300.0">
+               <children>
+                  <ImageView fx:id="close" fitHeight="20.0" fitWidth="20.0" layoutX="276.0" layoutY="4.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;">
+                     <image>
+                        <Image url="@../close.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="465.0" prefWidth="300.0">
+               <children>
+                  <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logo1.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="189.0" layoutY="418.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-background-radius: 5px; -fx-border-color: cyan; -fx-border-radius: 5px; -fx-text-fill: white;" text="Back" textFill="#f5f5f500">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Label layoutX="36.0" layoutY="65.0" prefHeight="66.0" prefWidth="409.0" text="Customer Login">
+         <font>
+            <Font name="Old English Text MT" size="56.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <SepiaTone />
+               </input>
+            </DropShadow>
+         </effect>
+      </Label>
+      <HBox layoutX="51.0" layoutY="166.0" prefHeight="35.0" prefWidth="340.0" style="-fx-background-color: #ededf0; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <ImageView fx:id="msgIcon" fitHeight="33.0" fitWidth="50.0" opacity="0.38" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.38;">
+               <image>
+                  <Image url="@../id.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="username" prefHeight="34.0" prefWidth="316.0" promptText="User ID or Email" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="51.0" layoutY="222.0" prefHeight="35.0" prefWidth="340.0" style="-fx-background-color: #ededf0; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <ImageView fx:id="lockIcon" fitHeight="33.0" fitWidth="50.0" opacity="0.38" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../lock.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="password" prefHeight="32.0" prefWidth="306.0" promptText="Password" style="-fx-background-color: transparent;" />
+         </children>
+      </HBox>
+      <Button defaultButton="true" layoutX="51.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loginButtonPushed" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-background-radius: 5px; -fx-border-color: cyan; -fx-border-radius: 5px; -fx-text-fill: white;" text="Login" textFill="#f5f5f500">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <CheckBox fx:id="rememberMe" layoutX="276.0" layoutY="303.0" mnemonicParsing="false" opacity="0.71" style="-fx-text-fill: black; -fx-border-color: grey;" text="Remember me" textFill="#b0c0c7c9">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></CheckBox>
+      <Pane layoutY="336.0" prefHeight="83.0" prefWidth="482.0">
+         <children>
+            <Label fx:id="label" layoutX="72.0" layoutY="15.0" prefHeight="52.0" prefWidth="306.0" style="-fx-text-fill: red;" />
+         </children>
+      </Pane>
+      <Pane layoutY="420.0" prefHeight="80.0" prefWidth="481.0" style="-fx-background-color: #ededf0;">
+         <children>
+            <Button layoutX="241.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#registerButtonPushed" style="-fx-background-color: transparent; -fx-text-fill: blue;" text="Don't have Account? GET REGISTER" textFill="#0832ed" underline="true">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="logo2" fitHeight="80.0" fitWidth="171.0" layoutX="-11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../customerLogo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="320.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#forgetPasswordButtonPushed" style="-fx-background-color: transparent; -fx-text-fill: blue;" text="Forget Password?" textFill="#0832ed" underline="true">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPaneReceptionistBackground" prefHeight="820.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.LeaveDetailedCustomerInfoController">
+   <children>
+      <VBox id="\\" layoutX="14.0" layoutY="-8.0" prefHeight="870.0" prefWidth="794.0" style="-fx-border-width: 3px;" stylesheets="@../guesthousemanagement/backGroundWelcome.css">
+         <children>
+            <HBox prefHeight="148.0" prefWidth="788.0">
+               <children>
+                  <Pane prefHeight="30.0" prefWidth="941.0">
+                     <children>
+                        <Label fx:id="nameLabel" layoutX="-23.0" prefHeight="141.0" prefWidth="785.0" style="-fx-text-fill: white; -fx-alignment: center;" text="LEAVED CUSTOMERS Details">
+                           <font>
+                              <Font name="Verdana Bold" size="40.0" />
+                           </font>
+                           <effect>
+                              <Bloom>
+                                 <input>
+                                    <DropShadow height="15.0" offsetX="5.0" offsetY="5.0" radius="7.0" spread="0.43" width="15.0">
+                                       <input>
+                                          <SepiaTone />
+                                       </input>
+                                    </DropShadow>
+                                 </input>
+                              </Bloom>
+                           </effect>
+                        </Label>
+                        <ImageView fx:id="logo" fitHeight="73.0" fitWidth="73.0" layoutX="712.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../logo1.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="44.0" layoutY="117.0" prefHeight="0.0" prefWidth="634.0" />
+                        <Separator layoutX="44.0" layoutY="24.0" prefHeight="0.0" prefWidth="634.0" />
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <VBox prefHeight="594.0" prefWidth="788.0">
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="802.0">
+                           <children>
+                              <Label layoutX="141.0" layoutY="-1.0" style="-fx-text-fill: white;" text="NAME                              :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="name" layoutX="413.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="802.0">
+                           <children>
+                              <Label layoutX="145.0" layoutY="-1.0" prefHeight="30.0" prefWidth="231.0" style="-fx-text-fill: white;" text="GENDER                          :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="gender" layoutX="414.0" layoutY="10.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="802.0">
+                           <children>
+                              <Label layoutX="144.0" layoutY="-1.0" prefHeight="30.0" prefWidth="238.0" style="-fx-text-fill: white;" text="DATE OF BIRTH              :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="dob" layoutX="414.0" layoutY="-1.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="802.0">
+                           <children>
+                              <Label layoutX="144.0" layoutY="-1.0" prefHeight="30.0" prefWidth="246.0" style="-fx-text-fill: white;" text="CNIC                                :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="cnic" layoutX="414.0" layoutY="-1.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="802.0">
+                           <children>
+                              <Label layoutX="144.0" prefHeight="30.0" prefWidth="231.0" style="-fx-text-fill: white;" text="EMAIL/USERNAME        :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="username" layoutX="414.0" layoutY="3.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="802.0">
+                           <children>
+                              <Label layoutX="144.0" layoutY="7.0" prefHeight="30.0" prefWidth="238.0" style="-fx-text-fill: white;" text="LEAVING DATE               :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="leavingDate" layoutX="414.0" layoutY="7.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="38.0" prefWidth="788.0">
+                           <children>
+                              <Label layoutX="143.0" layoutY="-1.0" prefHeight="30.0" prefWidth="238.0" style="-fx-text-fill: white;" text="JOINING DATE                :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="joiningDate" layoutX="414.0" layoutY="-2.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="119.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="73.0" prefWidth="789.0">
+                           <children>
+                              <Label layoutX="145.0" layoutY="-1.0" prefHeight="30.0" prefWidth="238.0" style="-fx-text-fill: white;" text="MOBILE                           :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="mob1" layoutX="414.0" layoutY="-2.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="mob2" layoutX="414.0" layoutY="29.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="mob3" layoutX="414.0" layoutY="59.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="185.0" prefWidth="788.0">
+                     <children>
+                        <Pane prefHeight="98.0" prefWidth="788.0">
+                           <children>
+                              <Label layoutX="147.0" layoutY="-1.0" prefHeight="30.0" prefWidth="238.0" style="-fx-text-fill: white;" text="ADDRESS                        :">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Label>
+                              <Label fx:id="address1_1" layoutX="413.0" layoutY="-4.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="address2_1" layoutX="413.0" layoutY="70.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="address2_2" layoutX="413.0" layoutY="90.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="address1_2" layoutX="413.0" layoutY="22.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="address3_1" layoutX="413.0" layoutY="129.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="address3_2" layoutX="413.0" layoutY="150.0" prefHeight="30.0" prefWidth="375.0" style="-fx-text-fill: white;">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="64.0" prefWidth="788.0">
+               <children>
+                  <Button layoutX="666.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-background-radius: 5px; -fx-border-color: cyan; -fx-border-radius: 5px; -fx-text-fill: white;" text="Back" textFill="#f5f5f500">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="15.0" offsetX="6.0" offsetY="5.0" radius="7.0" spread="0.07" width="15.0" />
+                     </effect>
+                  </Button>
+                  <Button layoutX="251.0" layoutY="48.0" mnemonicParsing="false" onAction="#seeBookingButtonPushed" prefHeight="37.0" prefWidth="321.0" style="-fx-background-color: transparent; -fx-text-fill: gold; -fx-border-color: white; -fx-border-width: 2.5px; -fx-border-radius: 30px;" text="See Booking of This Customer">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <effect>
+                        <Bloom threshold="0.78">
+                           <input>
+                              <SepiaTone>
+                                 <input>
+                                    <DropShadow spread="0.32" />
+                                 </input>
+                              </SepiaTone>
+                           </input>
+                        </Bloom>
+                     </effect>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@backGroundWelcome.css" />
+      <URL value="@backGroundWelcome.css" />
+   </stylesheets>
+</AnchorPane>

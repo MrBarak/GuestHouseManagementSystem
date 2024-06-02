@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guesthousemanagement.FXMLDocumentController">
+   <children>
+      <HBox fillHeight="false" prefHeight="600.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox id="rootPane" fillWidth="false" prefHeight="778.0" prefWidth="547.0" spacing="20.0" stylesheets="@backGroundWelcome.css">
+               <children>
+                  <StackPane prefHeight="226.0" prefWidth="446.0">
+                     <children>
+                        <Label style="-fx-text-fill: grey;" text="HB GUEST HOUSE">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="30.53" offsetX="6.0" offsetY="5.0" radius="10.8825" spread="0.13" width="15.0">
+                                 <input>
+                                    <SepiaTone />
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="81.0" prefWidth="446.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeScreenToAdminLogin" opacity="0.55" prefHeight="78.0" prefWidth="344.0" style="-fx-background-color: #999999; -fx-text-fill: black;" text="   Admin Login   " textFill="#010419">
+                           <font>
+                              <Font name="Brush Script MT Italic" size="36.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow height="15.92" offsetX="6.0" offsetY="5.0" radius="7.25" spread="0.11" width="15.08">
+                                 <input>
+                                    <Glow>
+                                       <input>
+                                          <SepiaTone />
+                                       </input>
+                                    </Glow>
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="90.0" prefWidth="446.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#changeScreenToCustomerLogin" opacity="0.52" prefHeight="78.0" prefWidth="344.0" style="-fx-background-color: #999999; -fx-text-fill: black;" text=" Customer Login  " textFill="#010419">
+                           <font>
+                              <Font name="Brush Script MT Italic" size="36.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow height="15.92" offsetX="6.0" offsetY="5.0" radius="7.25" spread="0.11" width="15.08">
+                                 <input>
+                                    <Glow>
+                                       <input>
+                                          <SepiaTone />
+                                       </input>
+                                    </Glow>
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="90.0" prefWidth="447.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#changeScreenToReceptionistLogin" opacity="0.63" prefHeight="78.0" prefWidth="344.0" style="-fx-background-color: #999999; -fx-text-fill: black;" text="Receptionist Login" textFill="#010419">
+                           <font>
+                              <Font name="Brush Script MT Italic" size="36.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow height="15.92" offsetX="6.0" offsetY="5.0" radius="7.25" spread="0.11" width="15.08">
+                                 <input>
+                                    <Glow>
+                                       <input>
+                                          <SepiaTone />
+                                       </input>
+                                    </Glow>
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <VBox id="rootPaneSide" fillWidth="false" prefHeight="750.0" prefWidth="305.0" stylesheets="@backGroundWelcome.css">
+               <children>
+                  <StackPane prefHeight="158.0" prefWidth="258.0">
+                     <children>
+                        <ImageView fx:id="logo" fitHeight="203.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../logo1.png" />
+                           </image>
+                           <effect>
+                              <DropShadow height="30.53" offsetX="6.0" offsetY="5.0" radius="12.3825" spread="0.15" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
